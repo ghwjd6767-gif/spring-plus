@@ -69,9 +69,11 @@ class TodoControllerTest {
 
         // then
         mockMvc.perform(get("/todos/{todoId}", todoId))
-                .andExpect(status().isOk())
-                .andExpect(jsonPath("$.status").value(HttpStatus.OK.name()))
-                .andExpect(jsonPath("$.code").value(HttpStatus.OK.value()))
+                .andExpect(status().isBadRequest())
+                .andExpect(jsonPath("$.status").value(HttpStatus.BAD_REQUEST.name()))
+                .andExpect(jsonPath("$.code").value(HttpStatus.BAD_REQUEST.value()))
                 .andExpect(jsonPath("$.message").value("Todo not found"));
     }
+    // InvalidRequestException은 이름에서도 알 수 있듯이 잘못된 요청(400 Bad Request) 을 의미하는 예외입니다.
+    // 따라서 응답 검증도 isBadRequest() / BAD_REQUEST로 맞춰서 해결함
 }
