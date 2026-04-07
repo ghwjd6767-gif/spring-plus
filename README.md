@@ -1,5 +1,18 @@
 # SPRING PLUS
-## 코드 개선 과제 풀이
+## 코드 개선 프로젝트
+
+해당 프로젝트는 과제성 프로젝트로 AOP, spring security, aws, queryDSL, index과 같은 Spring을 하는데 있어서 필수적인 요소들을 학습하고
+직접 작성해보는 프로젝트입니다.
+
+## 프로젝트 개요
+
+| 구분 | 내용 |
+|------|------|
+| 프로젝트명 | SPRING PLUS |
+| 한줄 소개 | Spring 핵심 기술을 직접 구현하며 학습하는 백엔드 프로젝트 |
+| 진행 목적 | 실무에서 사용되는 Spring 필수 기술(AOP, Security 등) 이해 및 적용 |
+| 적용 기술 | AOP, Spring Security, AWS, QueryDSL, Index |
+| 특징 | 이론이 아닌 직접 구현을 통한 학습 중심 프로젝트 |
 
 ### Lv 1-1 코드 개선 퀴즈 - @ Transactional의 이해
 
