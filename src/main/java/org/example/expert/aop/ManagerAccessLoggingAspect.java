@@ -6,7 +6,6 @@ import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
 import org.example.expert.domain.common.dto.AuthUser;
-import org.example.expert.domain.log.entity.Log;
 import org.example.expert.domain.log.entity.Status;
 import org.example.expert.domain.log.service.LogService;
 import org.example.expert.domain.manager.dto.request.ManagerSaveRequest;
