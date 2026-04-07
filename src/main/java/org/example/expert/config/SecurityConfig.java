@@ -48,10 +48,15 @@ public class SecurityConfig {
                 );
 
         http.authorizeHttpRequests(auth -> auth
-                .requestMatchers("/auth/**").permitAll()
                 .requestMatchers(HttpMethod.GET,
                         "/todos",
                         "/todos/{todoId}"
+                ).permitAll()
+                .requestMatchers(
+                        "/auth/signup",   // ← 추가
+                        "/auth/signin",
+                        "/actuator/info",
+                        "/actuator/health"
                 ).permitAll()
                 .requestMatchers("/admin/**").hasAuthority("ADMIN")
                 .anyRequest().authenticated()
